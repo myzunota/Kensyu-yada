@@ -1,46 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap');
-
 body {
-    margin: 0;
-    padding: 0;
-    background: url('FF2BF1D0-6776-487A-B86A-9AFF4102AEC8.webp') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    color: white;
+  margin: 0;
+  padding: 0;
+  background: url('poster_bg.png') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
 }
 
 .container {
-    position: relative;
-    width: 90%;
-    max-width: 800px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  padding: 20px;
 }
 
+/* キャッチコピー（横書き・中央配置） */
 .catchphrase {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    writing-mode: vertical-rl;
-    font-size: 24px;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
 }
 
+/* タイトル・サブタイトル（下部に配置） */
 .title {
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
 }
 
 .subtitle {
-    font-size: 18px;
-    margin-top: 5px;
-    opacity: 0.8;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+  opacity: 0.8;
 }
